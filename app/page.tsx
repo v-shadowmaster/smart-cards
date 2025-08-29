@@ -29,6 +29,9 @@ import {
   Stars,
 } from 'lucide-react';
 import Glass from '@/components/glass-button';
+import { AnimatedTooltipPreview } from '@/components/AnimatedTooltipPreview';
+import { WobbleCardDemo } from '@/components/WobbleCardDemo';
+import { HeroScrollDemo } from '@/components/HeroScrollDemo';
 
 export default function SmartCardLanding() {
   return (
@@ -76,6 +79,7 @@ export default function SmartCardLanding() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
+                <AnimatedTooltipPreview />
                 <Glass />
 
                 <h1 className="text-4xl lg:text-6xl font-bold text-balance leading-tight text-foreground animate-fade-in-up animate-delay-100">
@@ -253,6 +257,8 @@ export default function SmartCardLanding() {
         </div>
       </section>
 
+      <HeroScrollDemo />
+
       <section id="integrations" className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16 animate-fade-in-up">
@@ -264,122 +270,7 @@ export default function SmartCardLanding() {
               needs, all working together seamlessly.
             </p>
           </div>
-
-          <div className="grid grid-cols-12 gap-6 auto-rows-fr">
-            <div className="col-span-12 lg:col-span-8 animate-fade-in-up animate-delay-100 group">
-              <Card className="linear-card bg-card rounded-lg h-full border-2 border-white/20 hover:border-white/30 transition-all duration-300">
-                <CardHeader className="pb-4">
-                  <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
-                    <Brain className="w-6 h-6 text-foreground" />
-                  </div>
-                  <CardTitle className="text-xl text-foreground">
-                    AI-Powered Integrations
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground leading-relaxed">
-                    ChatGPT Operators, Grok Agents, and multi-AI provider
-                    ecosystem. Let AI complete tasks across platforms with
-                    natural language commands.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <CheckCircle className="w-4 h-4 text-foreground mr-2 flex-shrink-0" />
-                    Book flights with voice commands
-                  </div>
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <CheckCircle className="w-4 h-4 text-foreground mr-2 flex-shrink-0" />
-                    Manage social media with AI
-                  </div>
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <CheckCircle className="w-4 h-4 text-foreground mr-2 flex-shrink-0" />
-                    Diagnose network issues automatically
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="col-span-12 lg:col-span-4 animate-fade-in-up animate-delay-200 group">
-              <Card className="linear-card bg-card rounded-lg h-full border-2 border-white/20 hover:border-white/30 transition-all duration-300">
-                <CardHeader className="pb-4">
-                  <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
-                    <Plug className="w-6 h-6 text-foreground" />
-                  </div>
-                  <CardTitle className="text-xl text-foreground">
-                    Universal Compatibility
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground leading-relaxed">
-                    Connect to any existing service - REST, GraphQL, legacy
-                    systems. We adapt to the market as it is.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-3">
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <CheckCircle className="w-4 h-4 text-foreground mr-2 flex-shrink-0" />
-                    Expedia integration
-                  </div>
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <CheckCircle className="w-4 h-4 text-foreground mr-2 flex-shrink-0" />
-                    Banking APIs
-                  </div>
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <CheckCircle className="w-4 h-4 text-foreground mr-2 flex-shrink-0" />
-                    Legacy enterprise systems
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="col-span-12 md:col-span-6 lg:col-span-5 animate-fade-in-up animate-delay-300 group">
-              <Card className="linear-card bg-card rounded-lg h-full border-2 border-white/20 hover:border-white/30 transition-all duration-300">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
-                    <Building2 className="w-6 h-6 text-foreground" />
-                  </div>
-                  <CardTitle className="text-foreground">
-                    Partner Ecosystem
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground leading-relaxed">
-                    Our MCP/API framework lets companies integrate seamlessly.
-                    White-label solutions with auto-generated SDKs.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            </div>
-
-            <div className="col-span-12 md:col-span-6 lg:col-span-3 animate-fade-in-up animate-delay-400 group">
-              <Card className="linear-card bg-card rounded-lg h-full border-2 border-white/20 hover:border-white/30 transition-all duration-300">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
-                    <Code className="w-6 h-6 text-foreground" />
-                  </div>
-                  <CardTitle className="text-foreground">
-                    Developer Tools
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground leading-relaxed">
-                    Complete SDK suite with documentation and examples for rapid
-                    integration.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            </div>
-
-            <div className="col-span-12 md:col-span-6 lg:col-span-4 animate-fade-in-up animate-delay-500 group">
-              <Card className="linear-card bg-card rounded-lg h-full border-2 border-white/20 hover:border-white/30 transition-all duration-300">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
-                    <Users className="w-6 h-6 text-foreground" />
-                  </div>
-                  <CardTitle className="text-foreground">
-                    Enterprise Ready
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground leading-relaxed">
-                    Scale from prototype to production with enterprise-grade
-                    security and compliance.
-                  </CardDescription>
-                </CardHeader>
-              </Card>
-            </div>
-          </div>
+          <WobbleCardDemo />
         </div>
       </section>
 
