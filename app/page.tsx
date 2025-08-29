@@ -116,10 +116,10 @@ export default function SmartCardLanding() {
                 <div className="absolute -inset-8 bg-black/20 blur-3xl rounded-full transform rotate-1 scale-110"></div>
 
                 {/* iPhone Body */}
-                <div className="relative w-[320px] h-[650px] bg-gradient-to-b from-gray-800 via-gray-900 to-black rounded-[55px] p-[3px] shadow-2xl">
+                <div className="relative w-[320px] h-[650px] bg-gray-500 rounded-[55px] p-[3px] shadow-2xl">
                   {/* Outer frame highlight */}
-                  <div className="absolute inset-0 rounded-[55px] bg-gradient-to-b from-gray-600 via-gray-700 to-gray-900 p-[1px]">
-                    <div className="w-full h-full rounded-[54px] bg-gradient-to-b from-gray-800 via-gray-900 to-black"></div>
+                  <div className="absolute inset-0 rounded-[55px] bg-gray-500 p-[1px]">
+                    <div className="w-full h-full rounded-[54px] bg-gray-500"></div>
                   </div>
 
                   {/* Side buttons */}

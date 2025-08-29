@@ -99,11 +99,11 @@ export const Card = ({
         </div>
 
         {/* Power button */}
-        <div className="absolute -top-[2px] right-[80px] w-[60px] h-[4px] bg-gray-500 rounded-t-sm"></div>
+        <div className="absolute -top-[4px] right-[80px] w-[80px] h-[6px] bg-gray-500 rounded-t-sm"></div>
 
         {/* Volume buttons */}
-        <div className="absolute -right-[2px] top-[120px] w-[4px] h-[40px] bg-gray-500 rounded-r-sm"></div>
-        <div className="absolute -right-[2px] top-[180px] w-[4px] h-[40px] bg-gray-500 rounded-r-sm"></div>
+        <div className="absolute -right-[4px] top-[120px] w-[4px] h-[60px] bg-gray-500 rounded-r-sm"></div>
+        <div className="absolute -right-[4px] top-[180px] w-[4px] h-[60px] bg-gray-500 rounded-r-sm"></div>
 
         {/* Screen with proper thick bezel */}
         <div
