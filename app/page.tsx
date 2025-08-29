@@ -28,6 +28,7 @@ import {
   StarIcon,
   Stars,
 } from 'lucide-react';
+import Glass from '@/components/glass-button';
 
 export default function SmartCardLanding() {
   return (
@@ -75,13 +76,8 @@ export default function SmartCardLanding() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
-                <Badge
-                  variant="secondary"
-                  className="bg-background text-foreground border-2 border-white/20 rounded-full px-4 py-1.5 font-medium mb-6"
-                >
-                  <Stars className="w-4 h-4 mr-2" />
-                  AI-powered platform
-                </Badge>
+                <Glass />
+
                 <h1 className="text-4xl lg:text-6xl font-bold text-balance leading-tight text-foreground animate-fade-in-up animate-delay-100">
                   Plan the present. Build the{' '}
                   <span className="text-foreground">future</span>
