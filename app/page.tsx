@@ -10,7 +10,6 @@ import { Badge } from '@/components/ui/badge';
 import {
   Brain,
   Building2,
-  Plug,
   Zap,
   Shield,
   ArrowRight,
@@ -25,8 +24,6 @@ import {
   Star,
   Bot,
   Apple,
-  StarIcon,
-  Stars,
 } from 'lucide-react';
 import Glass from '@/components/glass-button';
 import { AnimatedTooltipPreview } from '@/components/AnimatedTooltipPreview';

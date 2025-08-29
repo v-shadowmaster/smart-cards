@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import { Stars } from 'lucide-react';
 
 function Glass({
   onClick = () => {},
